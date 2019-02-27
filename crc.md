@@ -1,16 +1,27 @@
 #Game
+
 ##Responsibilities
-    - Controls the flow of the game
+
+- Controls the flow of the game
+
 ##Collaborators
+
 
 #Player
+
 ##Responsibilities
-    - Chooses to roll or to hold
+
+- Chooses to roll or to hold
+
 ##Collaborators
-    - Game
+- Game
+
 
 #Computer
+
 ##Responsibilities
-    - Chooses to roll or hold based on a set strategy
+
+- Chooses to roll or hold based on a set strategy
+
 ##Collaborators
-    - Game
+- Game
