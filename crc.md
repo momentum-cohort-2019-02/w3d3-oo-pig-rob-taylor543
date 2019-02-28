@@ -1,21 +1,19 @@
 # Game
 
 **Responsibilities**
-- Controls the flow of the game
-- Keeps track of the state of the game (player totals, etc)
-- Reports to the player the state of the game
+- Keeps track of the state of the game (dice list, player totals, turn totals, etc)
+- Reports to the player the state of the game when asked
 
 **Collaborators**
 - Player
 - Strategy
+- Die
 
 
 # Player
 
 **Responsibilities**
-- Chooses to roll or to hold (If it has a Strategy, use that to decide to roll, otherwise takes user input)
-- Keeps track of the current point total for the turn only (total points are managed by the Game class)
-- Takes a turn (and reports point results for that turn)
+- Chooses to roll or to hold (If it has a Strategy, use that and the Game state to decide to roll, otherwise takes user input)
 
 **Collaborators**
 - Game
@@ -30,3 +28,14 @@
 **Collaborators**
 - Player
 - Game
+
+
+# Die
+
+**Responsibilities**
+- Keep track of how many sides or what the sides have on them
+- Be able to roll itself and return one of the sides as an integer
+
+**Collaborators**
+- Game
+- Player
